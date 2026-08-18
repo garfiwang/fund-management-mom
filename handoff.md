@@ -26,4 +26,4 @@
 2. 若有新增交易或費用，記錄於 `data/transactions.json`。
 
 ---
-*最後更新時間：2026-08-18 11:47 | 更新者：Antigravity @ Mac*
+*最後更新時間：2026-08-18 11:53 | 更新者：Antigravity @ Mac | Git 狀態：✅ 已推播至 garfiwang/fund-management-mom*
