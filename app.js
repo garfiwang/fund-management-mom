@@ -1,11 +1,11 @@
 /**
- * Client MOM (Cheng Lan-Ying) Fund Management System - Total Dashboard Application Logic
+ * Client MOM Fund Management System - Total Dashboard Application Logic
  */
 
 const fallbackData = {
   accounts: {
     client: "MOM",
-    client_name: "程蘭英 (MOM)",
+    client_name: "MOM",
     client_age: 85,
     currency: "TWD",
     total_initial_amount: 2000000,
