@@ -17,7 +17,7 @@
   - `nomura_dividend_research.html` (基本資料、十大持股、近30日淨值走勢與圖表、區域與資產分佈、波動度/Sharpe/Beta風險指標)
 - [x] **總儀錶板連結整合與 GitHub Pages 發布**：
   - 總儀表版 `index.html` 頂部導覽列與卡片皆整合直達 3 檔專屬子頁面連結
-  - 變更已 Push 至 GitHub 並更新 GitHub Pages
+  - 已建立 MOM 獨立 GitHub 儲存庫 `garfiwang/fund-management-mom` 並發布至 GitHub Pages
 - [x] **人名標籤清理**：
   - 專案內全數文件、UI、資料檔、程式碼皆已清理人名標籤，全數統一使用客戶代號「MOM」。
 
