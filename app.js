@@ -9,26 +9,30 @@ const fallbackData = {
     client_age: 85,
     currency: "TWD",
     total_initial_amount: 2000000,
-    total_current_valuation: 2000000,
+    total_current_valuation: 1965950,
     total_deductions: 0,
     total_dividends: 0,
-    last_updated: "2026-08-18",
+    valuation_date: "2026-08-25",
+    last_updated: "2026-08-26",
     accounts: [
       {
         account_id: "MOM-01",
         name: "MOM 綜合基金理財帳戶",
         initial_amount: 2000000,
-        current_balance: 2000000,
+        current_balance: 1965950,
         holdings: [
           {
             fund_code: "YUANTA_STABLE",
             target_name: "元大全球ETF穩健組合基金",
             allocation_ratio: "40%",
             units: 34028.073160,
-            avg_price: 23.51,
-            latest_price: 23.51,
+            avg_price: 23.5100,
+            latest_price: 23.2100,
+            latest_date: "2026-08-21",
             cost_amount: 800000,
-            current_valuation: 800000
+            current_valuation: 789792,
+            profit_loss: -10208,
+            return_rate: "-1.28%"
           },
           {
             fund_code: "ALLIANZ_BOND",
@@ -36,9 +40,12 @@ const fallbackData = {
             allocation_ratio: "30%",
             units: 35226.353484,
             avg_price: 17.0327,
-            latest_price: 17.0327,
+            latest_price: 16.8865,
+            latest_date: "2026-08-25",
             cost_amount: 600000,
-            current_valuation: 600000
+            current_valuation: 594849,
+            profit_loss: -5151,
+            return_rate: "-0.86%"
           },
           {
             fund_code: "NOMURA_DIVIDEND",
@@ -46,9 +53,12 @@ const fallbackData = {
             allocation_ratio: "30%",
             units: 13544.018059,
             avg_price: 44.3000,
-            latest_price: 44.3000,
+            latest_price: 42.9200,
+            latest_date: "2026-08-20",
             cost_amount: 600000,
-            current_valuation: 600000
+            current_valuation: 581309,
+            profit_loss: -18691,
+            return_rate: "-3.12%"
           }
         ]
       }
@@ -62,7 +72,7 @@ const fallbackData = {
       target_name: "元大全球ETF穩健組合基金",
       type: "申購",
       units: 34028.073160,
-      price: 23.51,
+      price: 23.5100,
       total_amount: 800000,
       note: "初始配置 40%"
     },
@@ -157,6 +167,11 @@ function renderSummary() {
     pnlRateEl.className = 'metric-sub text-rose';
     pnlRateEl.innerHTML = `<i class="fa-solid fa-arrow-trend-down"></i> ${pnlPct}% 總報酬率`;
   }
+
+  const updateTag = document.getElementById('lastUpdatedText');
+  if (updateTag) {
+    updateTag.textContent = `估值基準: ${data.valuation_date || '2026-08-25'}`;
+  }
 }
 
 // Render Chart Visualizations
@@ -167,18 +182,20 @@ function renderCharts() {
   const mainAcc = data.accounts[0];
   const holdings = mainAcc ? mainAcc.holdings : [];
 
-  // Chart 1: Asset Allocation Doughnut (40% / 30% / 30%)
+  // Chart 1: Asset Allocation Doughnut (Current Valuations)
   const ctxAllocation = document.getElementById('allocationChart').getContext('2d');
+  const vals = holdings.map(h => h.current_valuation || h.cost_amount);
+
   new Chart(ctxAllocation, {
     type: 'doughnut',
     data: {
       labels: [
-        '元大全球ETF穩健組合基金 (40%)',
-        '安聯四季回報債券組合基金-A (30%)',
-        '野村全球高股息基金累積型 (30%)'
+        '元大全球ETF穩健組合基金',
+        '安聯四季回報債券組合基金-A',
+        '野村全球高股息基金累積型'
       ],
       datasets: [{
-        data: [800000, 600000, 600000],
+        data: vals.length === 3 ? vals : [789792, 594849, 581309],
         backgroundColor: ['#2563eb', '#059669', '#d97706'],
         borderColor: '#ffffff',
         borderWidth: 2
@@ -196,7 +213,7 @@ function renderCharts() {
           callbacks: {
             label: (context) => {
               const total = context.dataset.data.reduce((a, b) => a + b, 0);
-              const pct = ((context.raw / total) * 100).toFixed(0);
+              const pct = ((context.raw / total) * 100).toFixed(1);
               return `${context.label}: $${context.raw.toLocaleString()} (${pct}%)`;
             }
           }
@@ -260,14 +277,25 @@ function renderFundCards() {
   const container = document.getElementById('fundCardsContainer');
   if (!container) return;
 
+  const data = appState.accountsData;
+  const mainAcc = data ? data.accounts[0] : null;
+  const holdings = mainAcc ? mainAcc.holdings : [];
+
+  const hYuanta = holdings.find(h => h.fund_code === 'YUANTA_STABLE') || {};
+  const hAllianz = holdings.find(h => h.fund_code === 'ALLIANZ_BOND') || {};
+  const hNomura = holdings.find(h => h.fund_code === 'NOMURA_DIVIDEND') || {};
+
   const fundsInfo = [
     {
       code: "YUANTA_STABLE",
       name: "1) 元大全球ETF穩健組合基金",
       ratio: "40%",
-      amount: "NT$ 800,000",
+      amount: `NT$ ${(hYuanta.current_valuation || 789792).toLocaleString()}`,
+      cost: "NT$ 800,000",
+      pnl: `${hYuanta.profit_loss || -10208}`,
+      rate: `${hYuanta.return_rate || '-1.28%'}`,
       units: "34,028.07 單位",
-      nav: "$23.51 TWD",
+      nav: `$${hYuanta.latest_price || 23.2100} TWD (${hYuanta.latest_date || '2026/08/21'})`,
       risk: "RR3 中度風險",
       strategy: "全球跨資產 ETF 組合，核心配置股債 ETF 防守兼備",
       color: "#2563eb",
@@ -277,9 +305,12 @@ function renderFundCards() {
       code: "ALLIANZ_BOND",
       name: "2) 安聯四季回報債券組合基金-A類型(累積)-新臺幣",
       ratio: "30%",
-      amount: "NT$ 600,000",
+      amount: `NT$ ${(hAllianz.current_valuation || 594849).toLocaleString()}`,
+      cost: "NT$ 600,000",
+      pnl: `${hAllianz.profit_loss || -5151}`,
+      rate: `${hAllianz.return_rate || '-0.86%'}`,
       units: "35,226.35 單位",
-      nav: "$17.0327 TWD",
+      nav: `$${hAllianz.latest_price || 16.8865} TWD (${hAllianz.latest_date || '2026/08/25'})`,
       risk: "RR3 中度風險",
       strategy: "優質全球債券組合，專注固定收益累積與抗下行波動",
       color: "#059669",
@@ -289,9 +320,12 @@ function renderFundCards() {
       code: "NOMURA_DIVIDEND",
       name: "3) 野村全球高股息基金累積型新台幣",
       ratio: "30%",
-      amount: "NT$ 600,000",
+      amount: `NT$ ${(hNomura.current_valuation || 581309).toLocaleString()}`,
+      cost: "NT$ 600,000",
+      pnl: `${hNomura.profit_loss || -18691}`,
+      rate: `${hNomura.return_rate || '-3.12%'}`,
       units: "13,544.02 單位",
-      nav: "$44.3000 TWD",
+      nav: `$${hNomura.latest_price || 42.9200} TWD (${hNomura.latest_date || '2026/08/20'})`,
       risk: "RR3 中度風險",
       strategy: "成熟市場高股息企業，累積型無須頻繁除息繳稅，追求穩定增值",
       color: "#d97706",
@@ -305,6 +339,10 @@ function renderFundCards() {
     div.className = 'account-card';
     div.style.borderTop = `4px solid ${fund.color}`;
 
+    const pnlNum = parseFloat(fund.pnl);
+    const pnlClass = pnlNum >= 0 ? 'text-emerald' : 'text-rose';
+    const pnlSign = pnlNum >= 0 ? '+' : '';
+
     div.innerHTML = `
       <div class="account-card-header">
         <div>
@@ -317,6 +355,14 @@ function renderFundCards() {
       </div>
 
       <div class="account-details-list">
+        <div class="detail-row">
+          <span class="detail-label">初始成本</span>
+          <span class="detail-value" style="font-weight: 700;">${fund.cost}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">未實現損益</span>
+          <span class="detail-value ${pnlClass}" style="font-weight: 700;">${pnlSign}$${Math.abs(pnlNum).toLocaleString()} (${fund.rate})</span>
+        </div>
         <div class="detail-row">
           <span class="detail-label">持股單位數</span>
           <span class="detail-value" style="font-weight: 700;">${fund.units}</span>

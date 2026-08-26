@@ -10,8 +10,8 @@
       "category": "組合平衡型 (FoF)",
       "management_company": "元大投信",
       "inception_date": "2005-03-08",
-      "latest_nav": 23.51,
-      "latest_nav_date": "2026-08-14",
+      "latest_nav": 23.2100,
+      "latest_nav_date": "2026-08-21",
       "target_return": "年化 4-5% (高於通膨)",
       "asset_allocation": [
         { "category": "全球股票/多元資產 ETF", "weight": "45.0%", "icon": "fa-chart-pie" },
@@ -19,28 +19,28 @@
         { "category": "現金及貨幣市場", "weight": "10.0%", "icon": "fa-coins" }
       ],
       "top_holdings": [
-        { "rank": 1, "name": "Vanguard Total Stock Market ETF (VTI)", "weight": "12.5%", "type": "股票型 ETF", "country": "美國" },
-        { "rank": 2, "name": "iShares Core U.S. Aggregate Bond ETF (AGG)", "weight": "12.0%", "type": "債券型 ETF", "country": "美國" },
-        { "rank": 3, "name": "Vanguard Total International Stock ETF (VXUS)", "weight": "8.5%", "type": "股票型 ETF", "country": "全球" },
-        { "rank": 4, "name": "iShares iBoxx $ Investment Grade Corporate Bond ETF (LQD)", "weight": "7.5%", "type": "投資級債 ETF", "country": "美國" },
-        { "rank": 5, "name": "Vanguard Short-Term Bond ETF (BSV)", "weight": "6.0%", "type": "短債 ETF", "country": "美國" }
+        { "rank": 1, "name": "iShares Core Universe USD Bond ETF (UI)", "weight": "13.59%", "type": "債券型 ETF", "country": "美國" },
+        { "rank": 2, "name": "SPDR S&P 500 ETF Trust (SPY)", "weight": "10.94%", "type": "股票型 ETF", "country": "美國" },
+        { "rank": 3, "name": "iShares Core U.S. Aggregate Bond ETF (AGG)", "weight": "7.00%", "type": "債券型 ETF", "country": "美國" },
+        { "rank": 4, "name": "First Trust Nasdaq Clean Edge Smart Grid ETF", "weight": "4.94%", "type": "產業型 ETF", "country": "美國" },
+        { "rank": 5, "name": "iShares Semiconductor ETF (SOXX)", "weight": "4.86%", "type": "科技 ETF", "country": "美國" }
       ],
       "nav_30_days": [
-        { "date": "2026/08/14", "nav": 23.51 },
-        { "date": "2026/08/13", "nav": 23.48 },
-        { "date": "2026/08/12", "nav": 23.45 },
-        { "date": "2026/08/11", "nav": 23.42 },
-        { "date": "2026/08/08", "nav": 23.38 },
-        { "date": "2026/08/07", "nav": 23.35 },
-        { "date": "2026/08/06", "nav": 23.40 },
-        { "date": "2026/08/05", "nav": 23.36 },
-        { "date": "2026/08/04", "nav": 23.30 },
-        { "date": "2026/08/01", "nav": 23.25 },
-        { "date": "2026/07/31", "nav": 23.28 },
-        { "date": "2026/07/30", "nav": 23.26 },
-        { "date": "2026/07/29", "nav": 23.22 },
-        { "date": "2026/07/28", "nav": 23.24 },
-        { "date": "2026/07/25", "nav": 23.20 }
+        { "date": "2026/08/21", "nav": 23.2100, "change": 0.0600 },
+        { "date": "2026/08/20", "nav": 23.1500, "change": -0.0500 },
+        { "date": "2026/08/19", "nav": 23.2000, "change": -0.1000 },
+        { "date": "2026/08/18", "nav": 23.3000, "change": -0.1200 },
+        { "date": "2026/08/15", "nav": 23.4200, "change": -0.0900 },
+        { "date": "2026/08/14", "nav": 23.5100, "change": 0.0300 },
+        { "date": "2026/08/13", "nav": 23.4800, "change": 0.0300 },
+        { "date": "2026/08/12", "nav": 23.4500, "change": 0.0300 },
+        { "date": "2026/08/11", "nav": 23.4200, "change": 0.0400 },
+        { "date": "2026/08/08", "nav": 23.3800, "change": 0.0300 },
+        { "date": "2026/08/07", "nav": 23.3500, "change": -0.0500 },
+        { "date": "2026/08/06", "nav": 23.4000, "change": 0.0400 },
+        { "date": "2026/08/05", "nav": 23.3600, "change": 0.0600 },
+        { "date": "2026/08/04", "nav": 23.3000, "change": 0.0500 },
+        { "date": "2026/08/01", "nav": 23.2500, "change": -0.0300 }
       ]
     },
     {
@@ -53,8 +53,8 @@
       "category": "組合債券型 (FoF)",
       "management_company": "安聯投信",
       "inception_date": "2010-06-22",
-      "latest_nav": 17.0327,
-      "latest_nav_date": "2026-08-13",
+      "latest_nav": 16.8865,
+      "latest_nav_date": "2026-08-25",
       "target_return": "年化 3-4% (穩定利息防守)",
       "asset_allocation": [
         { "category": "投資級企業債券基金", "weight": "50.0%", "icon": "fa-building-columns" },
@@ -63,27 +63,28 @@
         { "category": "現金及流動資產", "weight": "5.0%", "icon": "fa-wallet" }
       ],
       "top_holdings": [
-        { "rank": 1, "name": "PIMCO GIS Total Return Bond Fund", "weight": "15.2%", "type": "債券型基金", "country": "全球" },
-        { "rank": 2, "name": "Allianz Global Opportunistic Bond Fund", "weight": "12.8%", "type": "債券型基金", "country": "全球" },
-        { "rank": 3, "name": "BlackRock GF US Dollar Reserve Fund", "weight": "10.0%", "type": "貨幣型基金", "country": "美國" },
-        { "rank": 4, "name": "JPMorgan Funds - US Aggregate Bond Fund", "weight": "8.5%", "type": "債券型基金", "country": "美國" },
-        { "rank": 5, "name": "PIMCO GIS Global Investment Grade Credit Fund", "weight": "7.0%", "type": "投資級債基金", "country": "全球" }
+        { "rank": 1, "name": "PIMCO GIS Emerging Markets Bond Fund", "weight": "15.20%", "type": "債券型基金", "country": "全球" },
+        { "rank": 2, "name": "T. Rowe Price Global High Yield Bond Fund", "weight": "12.80%", "type": "高收益債", "country": "全球" },
+        { "rank": 3, "name": "Schroder ISF Global Corporate Bond Fund", "weight": "10.00%", "type": "企業債", "country": "歐美" },
+        { "rank": 4, "name": "PIMCO GIS Total Return Bond Fund", "weight": "8.50%", "type": "綜合債", "country": "全球" },
+        { "rank": 5, "name": "Invesco Global High Yield Corporate Bond Fund", "weight": "7.00%", "type": "企業債", "country": "全球" }
       ],
       "nav_30_days": [
-        { "date": "2026/08/13", "nav": 17.0327 },
-        { "date": "2026/08/12", "nav": 17.0280 },
-        { "date": "2026/08/11", "nav": 17.0210 },
-        { "date": "2026/08/08", "nav": 17.0150 },
-        { "date": "2026/08/07", "nav": 17.0100 },
-        { "date": "2026/08/06", "nav": 17.0120 },
-        { "date": "2026/08/05", "nav": 17.0050 },
-        { "date": "2026/08/04", "nav": 16.9980 },
-        { "date": "2026/08/01", "nav": 16.9920 },
-        { "date": "2026/07/31", "nav": 16.9950 },
-        { "date": "2026/07/30", "nav": 16.9890 },
-        { "date": "2026/07/29", "nav": 16.9830 },
-        { "date": "2026/07/28", "nav": 16.9850 },
-        { "date": "2026/07/25", "nav": 16.9800 }
+        { "date": "2026/08/25", "nav": 16.8865, "change": 0.0064 },
+        { "date": "2026/08/22", "nav": 16.8801, "change": -0.0150 },
+        { "date": "2026/08/21", "nav": 16.8951, "change": -0.0324 },
+        { "date": "2026/08/19", "nav": 16.9275, "change": -0.0505 },
+        { "date": "2026/08/18", "nav": 16.9780, "change": -0.0547 },
+        { "date": "2026/08/13", "nav": 17.0327, "change": 0.0047 },
+        { "date": "2026/08/12", "nav": 17.0280, "change": 0.0070 },
+        { "date": "2026/08/11", "nav": 17.0210, "change": 0.0060 },
+        { "date": "2026/08/08", "nav": 17.0150, "change": 0.0050 },
+        { "date": "2026/08/07", "nav": 17.0100, "change": -0.0020 },
+        { "date": "2026/08/06", "nav": 17.0120, "change": 0.0070 },
+        { "date": "2026/08/05", "nav": 17.0050, "change": 0.0070 },
+        { "date": "2026/08/04", "nav": 16.9980, "change": 0.0060 },
+        { "date": "2026/08/01", "nav": 16.9920, "change": -0.0030 },
+        { "date": "2026/07/31", "nav": 16.9950, "change": 0.0060 }
       ]
     },
     {
@@ -96,8 +97,8 @@
       "category": "全球股票型 (高股息)",
       "management_company": "野村投信",
       "inception_date": "2011-09-15",
-      "latest_nav": 44.3000,
-      "latest_nav_date": "2026-08-13",
+      "latest_nav": 42.9200,
+      "latest_nav_date": "2026-08-20",
       "target_return": "年化 4-6% (股息累積成長)",
       "asset_allocation": [
         { "category": "成熟市場高股息龍頭股", "weight": "75.0%", "icon": "fa-arrow-trend-up" },
@@ -105,27 +106,28 @@
         { "category": "現金儲備", "weight": "5.0%", "icon": "fa-coins" }
       ],
       "top_holdings": [
-        { "rank": 1, "name": "Microsoft Corp (MSFT)", "weight": "5.2%", "type": "科技/穩定配息", "country": "美國" },
-        { "rank": 2, "name": "JPMorgan Chase & Co (JPM)", "weight": "4.8%", "type": "金融龍頭", "country": "美國" },
-        { "rank": 3, "name": "Johnson & Johnson (JNJ)", "weight": "4.1%", "type": "醫療保健", "country": "美國" },
-        { "rank": 4, "name": "Procter & Gamble Co (PG)", "weight": "3.8%", "type": "民生消費", "country": "美國" },
-        { "rank": 5, "name": "Broadcom Inc (AVGO)", "weight": "3.5%", "type": "半導體配息", "country": "美國" }
+        { "rank": 1, "name": "台積電 (TSMC) ADR", "weight": "7.85%", "type": "晶圓代工", "country": "台灣" },
+        { "rank": 2, "name": "聯發科 (MediaTek)", "weight": "6.09%", "type": "IC 設計", "country": "台灣" },
+        { "rank": 3, "name": "三星電子 (Samsung Electronics)", "weight": "5.53%", "type": "消費電子", "country": "韓國" },
+        { "rank": 4, "name": "花旗集團 (Citigroup)", "weight": "4.48%", "type": "金融服務", "country": "美國" },
+        { "rank": 5, "name": "瑞穗金融集團 (Mizuho Financial)", "weight": "4.17%", "type": "金融控股", "country": "日本" }
       ],
       "nav_30_days": [
-        { "date": "2026/08/13", "nav": 44.3000 },
-        { "date": "2026/08/12", "nav": 44.2200 },
-        { "date": "2026/08/11", "nav": 44.1500 },
-        { "date": "2026/08/08", "nav": 44.0500 },
-        { "date": "2026/08/07", "nav": 44.0000 },
-        { "date": "2026/08/06", "nav": 44.1000 },
-        { "date": "2026/08/05", "nav": 44.0200 },
-        { "date": "2026/08/04", "nav": 43.9000 },
-        { "date": "2026/08/01", "nav": 43.8500 },
-        { "date": "2026/07/31", "nav": 43.9200 },
-        { "date": "2026/07/30", "nav": 43.8800 },
-        { "date": "2026/07/29", "nav": 43.8000 },
-        { "date": "2026/07/28", "nav": 43.8400 },
-        { "date": "2026/07/25", "nav": 43.7500 }
+        { "date": "2026/08/20", "nav": 42.9200, "change": -0.2800 },
+        { "date": "2026/08/19", "nav": 43.2000, "change": -0.4000 },
+        { "date": "2026/08/18", "nav": 43.6000, "change": -0.3500 },
+        { "date": "2026/08/15", "nav": 43.9500, "change": -0.3500 },
+        { "date": "2026/08/13", "nav": 44.3000, "change": 0.0800 },
+        { "date": "2026/08/12", "nav": 44.2200, "change": 0.0700 },
+        { "date": "2026/08/11", "nav": 44.1500, "change": 0.1000 },
+        { "date": "2026/08/08", "nav": 44.0500, "change": 0.0500 },
+        { "date": "2026/08/07", "nav": 44.0000, "change": -0.1000 },
+        { "date": "2026/08/06", "nav": 44.1000, "change": 0.0800 },
+        { "date": "2026/08/05", "nav": 44.0200, "change": 0.1200 },
+        { "date": "2026/08/04", "nav": 43.9000, "change": 0.0500 },
+        { "date": "2026/08/01", "nav": 43.8500, "change": -0.0700 },
+        { "date": "2026/07/31", "nav": 43.9200, "change": 0.0400 },
+        { "date": "2026/07/30", "nav": 43.8800, "change": 0.0800 }
       ]
     }
   ]
