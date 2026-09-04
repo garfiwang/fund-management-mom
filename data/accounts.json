@@ -5,20 +5,20 @@
   "risk_profile": "極低風險 / 本金保護導向 / 超越通膨 (2-3%)",
   "currency": "TWD",
   "total_initial_amount": 2000000,
-  "total_current_valuation": 1965951,
+  "total_current_valuation": 1957484,
   "total_deductions": 0,
   "total_dividends": 0,
-  "valuation_date": "2026-08-25",
-  "last_updated": "2026-08-26T12:10:00+08:00",
+  "valuation_date": "2026-09-02",
+  "last_updated": "2026-09-04T15:05:00+08:00",
   "accounts": [
     {
       "account_id": "MOM-01",
       "name": "MOM 綜合基金理財帳戶",
       "initial_amount": 2000000,
-      "current_balance": 1965951,
+      "current_balance": 1957484,
       "total_deductions": 0,
       "total_dividends": 0,
-      "valuation_date": "2026-08-25",
+      "valuation_date": "2026-09-02",
       "start_date": "2026-08-18",
       "status": "active",
       "target_allocation": [
@@ -45,12 +45,12 @@
           "allocation_ratio": "40%",
           "units": 34028.073160,
           "avg_price": 23.5100,
-          "latest_price": 23.2100,
-          "latest_date": "2026-08-21",
+          "latest_price": 22.9900,
+          "latest_date": "2026-09-02",
           "cost_amount": 800000,
-          "current_valuation": 789792,
-          "profit_loss": -10208,
-          "return_rate": "-1.28%"
+          "current_valuation": 782305,
+          "profit_loss": -17695,
+          "return_rate": "-2.21%"
         },
         {
           "fund_code": "ALLIANZ_BOND",
@@ -58,12 +58,12 @@
           "allocation_ratio": "30%",
           "units": 35226.353485,
           "avg_price": 17.0327,
-          "latest_price": 16.8865,
-          "latest_date": "2026-08-25",
+          "latest_price": 16.8010,
+          "latest_date": "2026-09-02",
           "cost_amount": 600000,
-          "current_valuation": 594850,
-          "profit_loss": -5150,
-          "return_rate": "-0.86%"
+          "current_valuation": 591838,
+          "profit_loss": -8162,
+          "return_rate": "-1.36%"
         },
         {
           "fund_code": "NOMURA_DIVIDEND",
@@ -71,12 +71,12 @@
           "allocation_ratio": "30%",
           "units": 13544.018059,
           "avg_price": 44.3000,
-          "latest_price": 42.9200,
-          "latest_date": "2026-08-20",
+          "latest_price": 43.0700,
+          "latest_date": "2026-09-01",
           "cost_amount": 600000,
-          "current_valuation": 581309,
-          "profit_loss": -18691,
-          "return_rate": "-3.12%"
+          "current_valuation": 583341,
+          "profit_loss": -16659,
+          "return_rate": "-2.78%"
         }
       ]
     }

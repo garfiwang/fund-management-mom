@@ -10,8 +10,8 @@
       "category": "組合平衡型 (FoF)",
       "management_company": "元大投信",
       "inception_date": "2005-03-08",
-      "latest_nav": 23.2100,
-      "latest_nav_date": "2026-08-21",
+      "latest_nav": 22.9900,
+      "latest_nav_date": "2026-09-02",
       "target_return": "年化 4-5% (高於通膨)",
       "asset_allocation": [
         { "category": "全球股票/多元資產 ETF", "weight": "45.0%", "icon": "fa-chart-pie" },
@@ -26,7 +26,12 @@
         { "rank": 5, "name": "iShares Semiconductor ETF (SOXX)", "weight": "4.86%", "type": "科技 ETF", "country": "美國" }
       ],
       "nav_30_days": [
-        { "date": "2026/08/21", "nav": 23.2100, "change": 0.0600 },
+        { "date": "2026/09/02", "nav": 22.9900, "change": -0.2200 },
+        { "date": "2026/08/27", "nav": 23.2100, "change": 0.0000 },
+        { "date": "2026/08/26", "nav": 23.2100, "change": 0.0000 },
+        { "date": "2026/08/25", "nav": 23.2100, "change": 0.1900 },
+        { "date": "2026/08/24", "nav": 23.0200, "change": -0.1300 },
+        { "date": "2026/08/21", "nav": 23.1500, "change": 0.0000 },
         { "date": "2026/08/20", "nav": 23.1500, "change": -0.0600 },
         { "date": "2026/08/19", "nav": 23.2100, "change": 0.0700 },
         { "date": "2026/08/18", "nav": 23.1400, "change": -0.2700 },
@@ -35,12 +40,7 @@
         { "date": "2026/08/13", "nav": 23.6200, "change": 0.0900 },
         { "date": "2026/08/12", "nav": 23.5300, "change": 0.1700 },
         { "date": "2026/08/11", "nav": 23.3600, "change": 0.0900 },
-        { "date": "2026/08/10", "nav": 23.2700, "change": -0.0800 },
-        { "date": "2026/08/07", "nav": 23.3500, "change": 0.1700 },
-        { "date": "2026/08/06", "nav": 23.1800, "change": -0.1100 },
-        { "date": "2026/08/05", "nav": 23.2900, "change": -0.0500 },
-        { "date": "2026/08/04", "nav": 23.3400, "change": 0.3300 },
-        { "date": "2026/08/03", "nav": 23.0100, "change": 0.2400 }
+        { "date": "2026/08/10", "nav": 23.2700, "change": -0.0800 }
       ]
     },
     {
@@ -53,8 +53,8 @@
       "category": "組合債券型 (FoF)",
       "management_company": "安聯投信",
       "inception_date": "2010-06-22",
-      "latest_nav": 16.8865,
-      "latest_nav_date": "2026-08-25",
+      "latest_nav": 16.8010,
+      "latest_nav_date": "2026-09-02",
       "target_return": "年化 3-4% (穩定利息防守)",
       "asset_allocation": [
         { "category": "投資級企業債券基金", "weight": "50.0%", "icon": "fa-building-columns" },
@@ -70,6 +70,10 @@
         { "rank": 5, "name": "Invesco Global High Yield Corporate Bond Fund", "weight": "7.00%", "type": "企業債", "country": "全球" }
       ],
       "nav_30_days": [
+        { "date": "2026/09/02", "nav": 16.8010, "change": 0.0185 },
+        { "date": "2026/09/01", "nav": 16.7825, "change": -0.0567 },
+        { "date": "2026/08/28", "nav": 16.8392, "change": -0.0397 },
+        { "date": "2026/08/27", "nav": 16.8789, "change": -0.0076 },
         { "date": "2026/08/25", "nav": 16.8865, "change": 0.0064 },
         { "date": "2026/08/21", "nav": 16.8801, "change": -0.0474 },
         { "date": "2026/08/19", "nav": 16.9275, "change": 0.0256 },
@@ -80,11 +84,7 @@
         { "date": "2026/08/12", "nav": 17.0322, "change": 0.0023 },
         { "date": "2026/08/11", "nav": 17.0299, "change": 0.0070 },
         { "date": "2026/08/10", "nav": 17.0229, "change": -0.0374 },
-        { "date": "2026/08/07", "nav": 17.0603, "change": 0.0215 },
-        { "date": "2026/08/06", "nav": 17.0388, "change": -0.0324 },
-        { "date": "2026/08/05", "nav": 17.0712, "change": -0.0107 },
-        { "date": "2026/08/04", "nav": 17.0819, "change": 0.0536 },
-        { "date": "2026/08/03", "nav": 17.0283, "change": 0.0150 }
+        { "date": "2026/08/07", "nav": 17.0603, "change": 0.0215 }
       ]
     },
     {
@@ -97,8 +97,8 @@
       "category": "全球股票型 (高股息)",
       "management_company": "野村投信",
       "inception_date": "2011-09-15",
-      "latest_nav": 42.9200,
-      "latest_nav_date": "2026-08-20",
+      "latest_nav": 43.0700,
+      "latest_nav_date": "2026-09-01",
       "target_return": "年化 4-6% (股息累積成長)",
       "asset_allocation": [
         { "category": "成熟市場高股息龍頭股", "weight": "75.0%", "icon": "fa-arrow-trend-up" },
@@ -113,6 +113,8 @@
         { "rank": 5, "name": "瑞穗金融集團 (Mizuho Financial)", "weight": "4.17%", "type": "金融控股", "country": "日本" }
       ],
       "nav_30_days": [
+        { "date": "2026/09/01", "nav": 43.0700, "change": 0.1600 },
+        { "date": "2026/08/28", "nav": 42.9100, "change": -0.0100 },
         { "date": "2026/08/20", "nav": 42.9200, "change": -0.1900 },
         { "date": "2026/08/19", "nav": 43.1100, "change": -0.5300 },
         { "date": "2026/08/18", "nav": 43.6400, "change": -0.6600 },

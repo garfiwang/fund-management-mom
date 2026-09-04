@@ -76,7 +76,7 @@
         </div>
         <div class="detail-row">
           <span class="detail-label">最新參考淨值</span>
-          <span class="detail-value" style="color: #059669; font-weight: 800; font-size: 1.1rem;">$16.8865 TWD (2026/08/25)</span>
+          <span class="detail-value" style="color: #059669; font-weight: 800; font-size: 1.1rem;">$16.8010 TWD (2026/09/02)</span>
         </div>
         <div class="detail-row">
           <span class="detail-label">配息政策</span>
@@ -191,7 +191,7 @@
     <section class="glass-panel" style="margin-bottom: 24px;">
       <div class="panel-header">
         <h2 class="panel-title"><i class="fa-solid fa-chart-line" style="color: #059669;"></i> 3. 最近 30 天淨值走勢 (30-Day NAV History)</h2>
-        <span class="text-muted" style="font-size: 0.82rem;">最新價格 $16.8865 (2026/08/25)</span>
+        <span class="text-muted" style="font-size: 0.82rem;">最新價格 $16.8010 (2026/09/02)</span>
       </div>
 
       <div class="chart-container" style="height: 320px; margin-bottom: 20px;">
@@ -338,6 +338,10 @@
     // 30-Day NAV Chart & Data Initialization
     document.addEventListener('DOMContentLoaded', () => {
       const navData = [
+        { date: "2026/09/02", nav: 16.8010, change: 0.0185 },
+        { date: "2026/09/01", nav: 16.7825, change: -0.0567 },
+        { date: "2026/08/28", nav: 16.8392, change: -0.0397 },
+        { date: "2026/08/27", nav: 16.8789, change: -0.0076 },
         { date: "2026/08/25", nav: 16.8865, change: 0.0064 },
         { date: "2026/08/21", nav: 16.8801, change: -0.0474 },
         { date: "2026/08/19", nav: 16.9275, change: 0.0256 },
@@ -348,11 +352,7 @@
         { date: "2026/08/12", nav: 17.0322, change: 0.0023 },
         { date: "2026/08/11", nav: 17.0299, change: 0.0070 },
         { date: "2026/08/10", nav: 17.0229, change: -0.0374 },
-        { date: "2026/08/07", nav: 17.0603, change: 0.0215 },
-        { date: "2026/08/06", nav: 17.0388, change: -0.0324 },
-        { date: "2026/08/05", nav: 17.0712, change: -0.0107 },
-        { date: "2026/08/04", nav: 17.0819, change: 0.0536 },
-        { date: "2026/08/03", nav: 17.0283, change: 0.0150 }
+        { date: "2026/08/07", nav: 17.0603, change: 0.0215 }
       ];
 
       // Table Render
