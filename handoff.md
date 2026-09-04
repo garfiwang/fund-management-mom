@@ -33,4 +33,4 @@
 2. 若有新增申購、配息或手續費交易，記錄於 `data/transactions.json`。
 
 ---
-*最後更新時間：2026-09-04 15:08 | 更新者：Antigravity @ Mac | Git 狀態：待推*
+*最後更新時間：2026-09-04 15:08 | 更新者：Antigravity @ Mac | Git 狀態：✅ 已推播至 garfiwang/fund-management-mom*
