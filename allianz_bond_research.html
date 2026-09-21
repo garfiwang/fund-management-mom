@@ -76,7 +76,7 @@
         </div>
         <div class="detail-row">
           <span class="detail-label">最新參考淨值</span>
-          <span class="detail-value" style="color: #059669; font-weight: 800; font-size: 1.1rem;">$16.8010 TWD (2026/09/02)</span>
+          <span class="detail-value" style="color: #059669; font-weight: 800; font-size: 1.1rem;">$16.7264 TWD (2026/09/17)</span>
         </div>
         <div class="detail-row">
           <span class="detail-label">配息政策</span>
@@ -191,7 +191,7 @@
     <section class="glass-panel" style="margin-bottom: 24px;">
       <div class="panel-header">
         <h2 class="panel-title"><i class="fa-solid fa-chart-line" style="color: #059669;"></i> 3. 最近 30 天淨值走勢 (30-Day NAV History)</h2>
-        <span class="text-muted" style="font-size: 0.82rem;">最新價格 $16.8010 (2026/09/02)</span>
+        <span class="text-muted" style="font-size: 0.82rem;">最新價格 $16.7264 (2026/09/17)</span>
       </div>
 
       <div class="chart-container" style="height: 320px; margin-bottom: 20px;">
@@ -338,21 +338,21 @@
     // 30-Day NAV Chart & Data Initialization
     document.addEventListener('DOMContentLoaded', () => {
       const navData = [
+        { date: "2026/09/17", nav: 16.7264, change: 0.0276 },
+        { date: "2026/09/16", nav: 16.6988, change: 0.0227 },
+        { date: "2026/09/15", nav: 16.6761, change: 0.0274 },
+        { date: "2026/09/14", nav: 16.6487, change: -0.0328 },
+        { date: "2026/09/11", nav: 16.6815, change: -0.0010 },
+        { date: "2026/09/10", nav: 16.6825, change: -0.0537 },
+        { date: "2026/09/09", nav: 16.7362, change: -0.0370 },
+        { date: "2026/09/08", nav: 16.7732, change: -0.0359 },
+        { date: "2026/09/04", nav: 16.8091, change: -0.0276 },
+        { date: "2026/09/03", nav: 16.8367, change: 0.0357 },
         { date: "2026/09/02", nav: 16.8010, change: 0.0185 },
         { date: "2026/09/01", nav: 16.7825, change: -0.0567 },
         { date: "2026/08/28", nav: 16.8392, change: -0.0397 },
         { date: "2026/08/27", nav: 16.8789, change: -0.0076 },
-        { date: "2026/08/25", nav: 16.8865, change: 0.0064 },
-        { date: "2026/08/21", nav: 16.8801, change: -0.0474 },
-        { date: "2026/08/19", nav: 16.9275, change: 0.0256 },
-        { date: "2026/08/18", nav: 16.9019, change: -0.0012 },
-        { date: "2026/08/17", nav: 16.9031, change: -0.0914 },
-        { date: "2026/08/14", nav: 16.9945, change: -0.0382 },
-        { date: "2026/08/13", nav: 17.0327, change: 0.0005 },
-        { date: "2026/08/12", nav: 17.0322, change: 0.0023 },
-        { date: "2026/08/11", nav: 17.0299, change: 0.0070 },
-        { date: "2026/08/10", nav: 17.0229, change: -0.0374 },
-        { date: "2026/08/07", nav: 17.0603, change: 0.0215 }
+        { date: "2026/08/25", nav: 16.8865, change: 0.0064 }
       ];
 
       // Table Render
